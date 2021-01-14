@@ -22,7 +22,7 @@ class getForPixiv:
     # 保存图片
     def saveImg(self, imgUrl, id):
         (file, ext) = os.path.split(imgUrl)
-        systemPath = '/www/wwwroot/python/WordPress/spider'
+        systemPath = '/www/wwwroot/python/spider'
         dirs = '{systemPath}/img/{id}/'.format(systemPath=systemPath, id=id)
         if not os.path.exists(dirs):
             os.makedirs(dirs)
